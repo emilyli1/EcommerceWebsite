@@ -1,0 +1,17 @@
+h1 {
+    font-family: "Arial";
+    margin-left: 600px;
+}
+p {
+
+}
+body {
+    background-color: rgb(98, 151, 207);
+}
+.HomePicture {
+    width: 400px;
+    length: 250 px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(196, 226, 252);
+    margin-left: 550px;
+}
