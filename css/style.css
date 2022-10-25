@@ -2,14 +2,20 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 	margin-left: 20px;
 }
+h5 {
+	font-size: large;
+}
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+	font-size: large;
 }
 body {
-    background-color: rgb(98, 151, 207);
+    background-color: rgb(152, 198, 247);
 }
-ul, li { 
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+}
+li { 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -61,7 +67,7 @@ ul, li {
 	box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
 .navbar .dropdown-menu a {
-	color: #777;
+	color: black;
 	padding: 8px 20px;
 	line-height: normal;
 }
@@ -116,92 +122,64 @@ ul, li {
 		width: 100%;
 	}
 }
-/* This is the login page */
-.form-control {
-	height: 40px;
-	box-shadow: none;
-	color: #969fa4;
+
+/* This is the registration page */
+* {box-sizing: border-box}
+/*
+.container {
+	max-width: 500px;
 }
-.form-control:focus {
-	border-color: #5cb85c;
+*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
-.form-control, .btn {        
-	border-radius: 3px;
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
-.signup-form {
-	width: 450px;
-	margin: 0 auto;
-	padding: 30px 0;
-  	font-size: 15px;
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
 }
-.signup-form h2 {
-	color: #636363;
-	margin: 0 0 15px;
-	position: relative;
-	text-align: center;
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
-.signup-form h2:before, .signup-form h2:after {
-	content: "";
-	height: 2px;
-	width: 30%;
-	background: #d4d4d4;
-	position: absolute;
-	top: 50%;
-	z-index: 2;
-}	
-.signup-form h2:before {
-	left: 0;
+
+.registerbtn:hover {
+  opacity:1;
 }
-.signup-form h2:after {
-	right: 0;
+
+/* Add a blue text color to links */
+a {
+  color: darkslateblue;
 }
-.signup-form .hint-text {
-	color: #999;
-	margin-bottom: 30px;
-	text-align: center;
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: rgb(152, 198, 247);
+  text-align: center;
 }
-.signup-form form {
-	color: #999;
-	border-radius: 3px;
-	margin-bottom: 15px;
-	background: #f2f3f7;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 30px;
-}
-.signup-form .form-group {
-	margin-bottom: 20px;
-}
-.signup-form input[type="checkbox"] {
-	margin-top: 3px;
-}
-.signup-form .btn {        
-	font-size: 16px;
-	font-weight: bold;		
-	min-width: 140px;
-	outline: none !important;
-}
-.signup-form .row div:first-child {
-	padding-right: 10px;
-}
-.signup-form .row div:last-child {
-	padding-left: 10px;
-}    	
-.signup-form a {
-	color: #fff;
-	text-decoration: underline;
-}
-.signup-form a:hover {
-	text-decoration: none;
-}
-.signup-form form a {
-	color: #5cb85c;
-	text-decoration: none;
-}	
-.signup-form form a:hover {
-	text-decoration: underline;
-}  
 
 /* Products Page */
+
 .card {
 	max-width: 375px;
 	max-height: 450px;
@@ -216,8 +194,51 @@ ul, li {
 .card-body {
 	max-width: 375px;
 	max-height: 450px;
-	
+
+}
+
+.card-title {
+	font-size: medium;
+}
+.card-text {
+	font-size: smaller;
 }
 .btn {
 	margin-top: 25px;
 }
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+/* login page */
+.login-form {
+    width: 450px;
+    margin: 50px auto;
+}
+.login-form form {        
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.input-group-addon .fa {
+    font-size: 18px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+.bottom-action {
+  	font-size: 14px;
+}
+
+/*checkout page */
