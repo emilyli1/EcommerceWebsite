@@ -10,13 +10,16 @@ p {
 	font-size: large;
 }
 body {
-    background-color: rgb(152, 198, 247);
+    background-color: rgb(138, 195, 255);
 }
 ul {
 	font-family: Arial, Helvetica, sans-serif;
 }
 li { 
     font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+	background-color: white;
 }
 
 /* This is the nav bar */
@@ -125,12 +128,7 @@ li {
 
 /* This is the registration page */
 * {box-sizing: border-box}
-/*
-.container {
-	max-width: 500px;
-}
-*/
-/* Full-width input fields */
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -145,13 +143,13 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
+
 hr {
   border: 1px solid white;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit/register button */
+
 .registerbtn {
   background-color: #04AA6D;
   color: white;
@@ -167,12 +165,12 @@ hr {
   opacity:1;
 }
 
-/* Add a blue text color to links */
+
 a {
   color: darkslateblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
+
 .signin {
   background-color: rgb(152, 198, 247);
   text-align: center;
@@ -194,9 +192,7 @@ a {
 .card-body {
 	max-width: 375px;
 	max-height: 450px;
-
 }
-
 .card-title {
 	font-size: medium;
 }
@@ -242,3 +238,37 @@ a {
 }
 
 /*checkout page */
+.container {
+	max-width: 1200px;
+	margin-top: 15px;
+}
+.cart {
+	display: flex;
+}
+.products {
+	flex: 0.75;
+}
+.product {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border: 2px solid white;
+}
+.product:hover {
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+}
+.product > img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+.product-info {
+	padding: 20px;
+	width: 100%;
+}
+.product-name {
+	margin-bottom: 20px;
+}
