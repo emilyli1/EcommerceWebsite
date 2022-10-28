@@ -194,7 +194,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .signin {
-  background-color: rgbrgb(138, 195, 255);
+  background-color: rgb(138, 195, 255);
   text-align: center;
 }
 
@@ -228,6 +228,7 @@ input[type=text]:focus, input[type=password]:focus {
 	display: flex;
 	justify-content: space-between;
 	justify-content: space-around;
+	margin-bottom: 50px;
 }
 
 /* login page */
